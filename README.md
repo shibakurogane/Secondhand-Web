@@ -1,4 +1,5 @@
 # Secondhand-Web
+Cài đặt xampp
 Cài đặt Composer
 
 tải file Composer-Setup.exe tại đây.
@@ -14,3 +15,22 @@ Lựa chọn đường dẫn đến phiên bản PHP muốn sử dụng (Ở đ�
 
 Nhấn Install để cài đặt.
 Sau khi Composer Cài đặt xong nhấn Next và Install để kết thúc.
+-Fork project về repo cá nhân
+-Clone project về xampp/htdocs
+-Add remote repository vào htdocs
+git add remote Web https://github.com/Vainres/Secondhand-Web.git
+
+# WORKFLOW
+# Khi bắt đầu mỗi lần làm
+-Chuyển về nhánh chính main
+-Pull code mới nhất từ git
+git pull Web main
+-Tạo và chuyển branch mới
+-Code
+
+# Sau khi xong
+-Pull code mới nhất từ git
+git pull Web main
+-Fix conflict nếu có
+-Push code lên repository folk về lúc đầu
+-Tạo pull request từ đó
