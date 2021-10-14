@@ -4,19 +4,21 @@
 }
 
 .header__navbar .logo{
-    width: 80px;
+    width: 150px;
     
 }
 
 .header__navbar{
 display: flex;
 justify-content: space-between;
+
 }
 
 .header__navbar-list{
 list-style: none;
 display: inline-block;
 margin-top: 4px 0 0 0;
+padding-inline-start: 0px;
 }
 .header__navbar-list--margin{
     margin-top: 20px;
@@ -107,6 +109,14 @@ margin-top: 4px 0 0 0;
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+@keyframes button{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
