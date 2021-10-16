@@ -15,7 +15,7 @@ use App\Http\Controllers\AuthController;
 |
 */
 Route::post('/login', 'App\Http\Controllers\AuthController@login');
-Route::post('/signin', 'App\Http\Controllers\UserController@create');
+Route::post('/signup', 'App\Http\Controllers\UserController@create');
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::resource('/users', UserController::class);
