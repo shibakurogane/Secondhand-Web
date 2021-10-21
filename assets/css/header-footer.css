@@ -1,6 +1,11 @@
 .header {
-    height: 140px;
+    height: 130px;
     background-color:#1B2023;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .grid__header{
@@ -232,6 +237,7 @@ line-height: 40px;
 
 .header__user-img{
     height: 40px;
+    border-radius: 100%;
 }
 
 .header__user-name{
