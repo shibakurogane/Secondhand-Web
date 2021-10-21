@@ -1,6 +1,6 @@
 .container{
     background-image: linear-gradient(#1B2023, #52616B);
-    height: 100%;
+   margin-top: 120px;
 }
 .category{
     border-radius:4px;
@@ -74,7 +74,6 @@
     /*border: #999 3px solid;*/
     margin-top: 12px;
     background-color:var(--white-color); 
-    height: 590px;
 }
 
 .productshow__header{
@@ -173,4 +172,22 @@
 .action__BUY:hover{
     background-color: #999;
     color: black;
+}
+/*--------------------------MORE------------------------*/
+.productshow_more{
+    background-color: var(--white-color);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top:1px solid #999 ;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.productshow_more-link{
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: 700;
 }
