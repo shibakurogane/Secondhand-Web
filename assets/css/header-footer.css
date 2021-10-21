@@ -3,6 +3,9 @@
     background-color:#1B2023;
 }
 
+.grid__header{
+}
+
 .header__navbar .logo{
     width: 150px;
     
@@ -77,7 +80,7 @@ padding-inline-start: 0px;
     animation: headerNotifyGrowth ease-in 0.3s;
     will-change: opacity, transform;
     display: none;
-    z-index: 1;
+    z-index: 5;
 }
 
 .header__notify::before{
@@ -214,6 +217,8 @@ line-height: 40px;
     background-color: white;
     border-radius: 4px;
     display: flex;
+    z-index: 1;
+
 
 }
 
@@ -429,3 +434,4 @@ line-height: 40px;
 .header__seacrh-input:focus ~ .header__search-history{
     display: block;
 }
+
