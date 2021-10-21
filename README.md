@@ -30,3 +30,6 @@ Sau khi Composer Cài đặt xong nhấn Next và Install để kết thúc.
 -Fix conflict nếu có  
 -Push code lên repository folk về lúc đầu  
 -Tạo pull request từ đó  
+
+
+-Xin chao
