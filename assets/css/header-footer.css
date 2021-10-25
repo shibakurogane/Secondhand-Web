@@ -441,3 +441,28 @@ line-height: 40px;
     display: block;
 }
 
+/*------------------footer----------------*/
+.footer-icon{
+    margin-top: 16px;
+    margin-left: 24px;
+    opacity: 0.8;
+}
+
+.footer-link{
+    text-decoration: none;
+    color:var(--grayish-color);
+    
+}
+
+.footer-button{
+    color: var(--grayish-color);
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-bottom{
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none;
+    color: var(--grayish-color);
+}
