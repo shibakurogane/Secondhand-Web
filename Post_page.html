@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/header-footer.css">
+    <link rel="stylesheet" href="./assets/css/Post_page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Đăng Bán</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <script src="./assets/java/img_upload.js"></script>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <div class="grid__header">
+
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <img class="logo" src="./assets/img/logo_web_offi.png" alt="">
+                            </li>
+                        </ul>
+
+                        <ul class="header__navbar-list--margin">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link"><i
+                                        class="header__navbar-icon ti-home"></i>Trang
+                                    chủ</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link"><i
+                                        class="header__navbar-icon ti-user"></i>Quản
+                                    lý tin</a>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link"><i
+                                        class="header__navbar-icon ti-bell"></i>Thông
+                                    báo</a>
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>Thông Báo Vừa Nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                    class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Xe Honda CRV</span>
+                                                    <span class="header__notify-decrip">Khi giới hạn không thể ngăn lối
+                                                        thành công, cùng Honda CR-V đánh thức và cảm nhận mọi giác quan
+                                                        trong bạn để chạm đến đỉnh vinh quang. </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                    class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Xe Honda CRV</span>
+                                                    <span class="header__notify-decrip">Mô tả</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item ">
+                                            <a href="" class="header__notify-link">
+                                                <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                    class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Xe Honda CRV</span>
+                                                    <span class="header__notify-decrip">Mô tả</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--has-more">
+                                <a href="" class="header__navbar-item-link"><i
+                                        class="header__navbar-icon ti-more"></i>Thêm</a>
+                                <div class="header__more">
+                                    <ul class="header__more-list">
+                                        <li class="header__more-item">
+                                            <a href=""><i class="header__more-item-icon ti-help-alt"></i>Trợ giúp</a>
+                                        </li>
+                                        <li class="header__more-item">
+                                            <a href=""><i class="header__more-item-icon ti-settings"></i> Cài đặt</a>
+                                        </li>
+                                        <li class="header__more-item">
+                                            <a href=""><i class="header__more-item-icon ti-shift-right"></i> Đăng
+                                                xuất</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-with-search">
+                        <div class="header__seacrh">
+                            <div class="header__seacrh-input-wrap">
+                                <input type="text" class="header__seacrh-input" placeholder="Tìm Kiếm Sản Phẩm">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Laptop Gaming thế hệ mới</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Ôtô bán tải vượt thác</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Quần áo cũ rách</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="" class="header__seacrh-btn">
+                                <i class="header__seacrh-btn-icon ti-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="header__user">
+                            <img src="./assets/img/img-tt/user.png" alt="" class="header__user-img">
+                            <a href="" class="header__user-name">Nguyễn Hiếu Nghĩa</a>
+                        </div>
+                        <div class="header__post">
+                            <a class="header__post-btn" href="">
+                                <i class="header__post-btn-icon ti-share"></i>
+                                Đăng tin
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-1">
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="infor_product">
+                            <div class="grid__row">
+                                <div class="grid__column-3of10">
+                                    <div class="infor_product-uploadImg">
+                                        <!---------------TEST-->
+                                        <div class="reviews">
+                                            <div class="BTN-UPLOAD">
+                                                <label class="BTN-UPLOAD-title"><span>Thêm ảnh mô tả</span></label>
+                                            </div>
+                                            <div class="list_IMG">
+                                                <ul class="List_attach_view">
+                                                   <!--<img src="./assets/img/category/do-gia-dung.png" alt="">
+                                                    <img src="./assets/img/category/free_0d.png" alt="">
+                                                    <li id="li_files_' + _time + '" class="li_file_hide">
+                                                        <div class="img-wrap">
+                                                            <span class="close" onclick="DelImg(this)">×</span>
+                                                            <div class="img-wrap-box">
+                                                        </div>
+                                                        </div>
+                                                            <div class="' + _time + '">
+                                                            <input type="file" class="hidden"  onchange="uploadImg(this)" id="files_' + _time + '"   />
+                                                         </div>
+                                                    </li>--> 
+                                                </ul>
+                                                <!--<span class="insert_attach_UP"><i class="dandev-plus">+</i></span>-->
+                                            </div>
+                                        </div>
+<!--------------------------------------------------FL CODE------------------->  
+                                            
+                                    </div>  
+                                </div>
+                                <div class="grid__column-7of10">
+                                    
+                                    <div class="infor_product-category">
+                                        
+                                        <div class="infor_product-category-title"><span>Thông Tin Sản Phẩm</span> </div>   
+                                    <div class="infor_product-category-ali">
+                                        <div class="tilte-selects">Danh mục sản phẩm:<span class="Obligatory">*</span></div>
+                                        <select name="category" id="slect__category" class="infor_product-category-ali-select">
+                                            <option selected="Default" disabled="" value="">Danh mục sản phẩm (bắt buộc)</option>
+                                            <option value="Fashion">Thời trang</option>
+                                            <option value="Phone">Điện thoại</option>
+                                            <option value="Home-machine">Đồ gia dụng</option>
+                                            <option value="Furniture">Nội thất</option>
+                                            <option value="Home">Nhà đất</option>
+                                            <option value="Bike">Xe</option>
+                                            <option value="Agri">Nông ghiệp</option>
+                                            <option value="Industry">Đồ công nghiệp</option>
+                                            <option value="Enjoy">Sở thích</option>
+                                            <option value="Sport">Thể thao</option>
+                                            <option value="Pet">Thú cưng</option>
+                                            <option value="Free">Hàng 0 đồng</option>
+                                        </select>
+                                    </div>
+                                    <div class="infor_product-category-ali">
+                                        <div class="tilte-selects">Tiêu đề cho sản phẩm:<span class="Obligatory">*</span></div>
+                                        <input type="text" name="name_product" id="Name_product" class="infor_product-category-ali-select" placeholder="Tiêu đề cho sản phẩm (bắt buộc)">
+                                    </div>
+                                    <div class="infor_product-category-ali">
+                                        <div class="Price-selects">Giá(VND):<span class="Obligatory">*</span></div>
+                                        <div class="infor_product-category-ali-combo">
+                                            <input type="text" name="name_product" id="Price_product" class="infor_product-category-ali-select" placeholder="Giá sản phẩm (bắt buộc)">
+                                            <label for="Price_product" class="Label_unit">VND</label>
+                                        </div>
+                                    </div>
+                                    <div class="infor_product-category-ali">
+                                        <div class="tilte-selects">Tình trạng sản phẩm:<span class="Obligatory">*</span></div>
+                                        <input type="text" name="name_product" id="Name_product" class="infor_product-category-ali-select" placeholder="Tình trạng sản phẩm (bắt buộc) vd:sản phẩm còn mới, dùng được 2 năm,... ">
+                                    </div>
+                                    <div class="infor_product-category-ali">
+                                        <div class="tilte-selects">Mô tả chi tiết:<span class="Obligatory">*</span></div>
+                                        <textarea class="infor_product-category-ali-select" inputmode="text" id="Decrip_product" name="body" placeholder="Viết tiếng Việt có dấu
+- Xuất sứ
+- Nhãn hiệu
+- Chất liệu, kích thước
+- Giấy tờ kèm theo(nếu có)
+- Hạn bảo hành(nếu có)
+Hãy mô tả thật rõ ràng để sản phẩm của bạn được bán nhanh nhất"></textarea>
+                                    </div>
+                                    </div>
+                                    <div class="infor_product-export">
+                                        <a href="#" class="infor_product-export-btn"><span class="infor_product-export-btn-text">Đăng bài</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-1">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+        
+            <div class="">
+                <div class="footer-icon">
+                    <center>
+                    <a href="#" class="footer-link" ><i class="footer-button ti-facebook "></i></a>
+                    <a href="#" class="footer-link" ><i class="footer-button ti-instagram "></i></a>
+                    <a href="#" class="footer-link" ><i class="footer-button ti-linkedin"></i></a>
+                    <a href="#" class="footer-link" ><i class="footer-button ti-twitter-alt"></i></a>
+                    <a href="#" class="footer-link" ><i class="footer-button ti-pinterest"></i></a>
+                    <div class="footer-bottom"></div>
+                    <center>
+                        <p>Địa chỉ: Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh. 
+                            Tổng đài hỗ trợ: (028) 372 52002 - Email: <a href="mailto:19521852@gm.uit.edu.vn">2ndhand@gmail.com</a></p>
+                        <p>© 2021 - Bản quyền thuộc về BaiRac Team</p>
+                    <center>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $('.BTN-UPLOAD').click(function() {
+            if ($('.insert_attach_UP').hasClass('show-btn') === false) {
+                $('.insert_attach_UP').addClass('show-btn');
+                
+            }
+            var _lastimg = jQuery('.List_attach_view li').last().find('input[type="file"]').val();
+
+            if (_lastimg != '') {
+                var d = new Date();
+                var _time = d.getTime();
+                var _html = '<li id="li_files_' + _time + '" class="li_file_hide">';
+                _html += '<div class="img-wrap">';
+                _html += '<span class="close" onclick="DelImg(this)">×</span>';
+                _html += ' <div class="img-wrap-box"></div>';
+                _html += '</div>';
+                _html += '<div class="' + _time + '">';
+                _html += '<input type="file" class="hidden"  onchange="uploadImg(this)" id="files_' + _time + '"   />';
+                _html += '</div>';
+                _html += '</li>';
+                jQuery('.List_attach_view').append(_html);
+                jQuery('.List_attach_view li').last().find('input[type="file"]').click();
+            } else {
+                if (_lastimg == '') {
+                    jQuery('.List_attach_view li').last().find('input[type="file"]').click();
+                } else {
+                    if ($('.insert_attach_UP').hasClass('show-btn') === true) {
+                        $('.insert_attach_UP').removeClass('show-btn');
+                    }
+                }
+            }
+        });
+
+        function uploadImg(el) {
+            var file_data = $(el).prop('files')[0];
+            var type = file_data.type;
+            var fileToLoad = file_data;
+
+            var fileReader = new FileReader();
+
+            fileReader.onload = function(fileLoadedEvent) {
+                var srcData = fileLoadedEvent.target.result;
+
+                var newImage = document.createElement('img');
+                newImage.src = srcData;
+                var _li = $(el).closest('li');
+                if (_li.hasClass('li_file_hide')) {
+                    _li.removeClass('li_file_hide');
+                }
+                _li.find('.img-wrap-box').append(newImage.outerHTML);
+
+
+            }
+            fileReader.readAsDataURL(fileToLoad);
+
+        }
+
+        function DelImg(el) {
+            jQuery(el).closest('li').remove();
+
+        }
+    </script>
+</body>
+</html>
