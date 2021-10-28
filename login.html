@@ -30,14 +30,14 @@
 
         <div class="form-box">
             <div class="form-box-box">
-                <form action="" method="POST"  onsubmit="return validate()" id="form-login-register" name="contactForm" >
+                <form action="http://127.0.0.1:8000/api/login" method="POST"  onsubmit="return validate()" id="form-login-register" name="contactForm" >
                     <div class="login-box">
                         <h2 class="login-title">ĐĂNG NHẬP</h2><br>
                 
                             <center style="font-size: 14px;">
                             
                                 <div>
-                                <input class="login-info" type="text" placeholder="Email/SĐT/Tên đăng nhập" name="username" id="username"><br><br>
+                                <input class="login-info" type="text" placeholder="Email" name="email" id="email"><br><br>
 
                                 <input class="login-info" type="password" placeholder="Mật khẩu" name="password" id="pass"> <br>
                                 
@@ -46,7 +46,7 @@
                                
                                 </div>  
                             </center>
-                            <a href="#" type="submit" class="login-button"  >ĐĂNG NHẬP</a><br><br><br>
+                            <input href="#" type="submit" class="login-button"  >ĐĂNG NHẬP><br><br><br>
                             <a class="fogot-pas" href="#" style="margin-left: 24px;">Quên mật khẩu</a>
                     </div>
                     <div class="register-login">

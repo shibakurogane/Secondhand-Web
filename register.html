@@ -30,22 +30,23 @@
 
         <div class="form-box">
             <div class="form-box-box">
-                <form action="" method="POST" onsubmit="return validate()">
+                <form action="http://127.0.0.1:8000/api/signup" method="POST" >
                     <div class="register-box">
                         <h2 class="register-title">ĐĂNG KÍ</h2><br>
                 
                             <center style="font-size: 14px;">
                             
                                 <div>
-                                <input class="register-info" type="text" placeholder="Email/SĐT/Tên đăng nhập" name="username" id="username"><br><br>
-                                    
+                                <input class="register-info" type="text" placeholder="Email" name="email" id="email"><br><br>
+                                <input class="register-info" type="text" placeholder="Họ và Tên" name="name" id="name"><br><br>
+                                <input class="register-info" type="text" placeholder="Số điện thoại" name="phone" id="phone"><br><br>   
                                 <input class="register-info" type="password" placeholder="Mật khẩu" name="password" id="pass"> <br>
                                 
                                     <i  class="eye-icon ti-eye " type="button" onclick="showHidden()" id="eye-icon"></i>
                                
                                 </div>  
                             </center>
-                            <a type="submit" class="register-button">ĐĂNG KÍ</a><br><br><br>
+                            <input type="submit" class="register-button">ĐĂNG KÍ><br><br><br>
                             
                     </div>
                     <div class="register-login">
