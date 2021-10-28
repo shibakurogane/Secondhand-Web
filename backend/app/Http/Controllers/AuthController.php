@@ -6,7 +6,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
+use Mail;
+use App\Mail\WelcomeMail;
 class AuthController extends Controller
 {
     public function login(Request $request)
@@ -31,7 +32,7 @@ class AuthController extends Controller
             if (!Hash::check($request->password, $user->password, [])) {
                 throw new \Exception('Error in Login');
             }
-
+            
             $tokenResult = $user->createToken('authToken')->plainTextToken;
 
             return response()->json([

@@ -15,7 +15,9 @@ class CreateGoodCategoriesTable extends Migration
     {
         Schema::create('good_categories', function (Blueprint $table) {
             $table->unsignedBigInteger('good_id')->nullable();
+            $table->foreign('good_id')->references('id')->on('goods')->onDelete('cascade');
             $table->unsignedBigInteger('category_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

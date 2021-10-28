@@ -16,9 +16,10 @@ use App\Http\Controllers\AuthController;
 */
 Route::post('/login', 'App\Http\Controllers\AuthController@login');
 Route::post('/signup', 'App\Http\Controllers\UserController@create');
-
+Route::get('/info', 'App\Http\Controllers\UserController@usss');
+Route::get('/activation/{token}', 'App\Http\Controllers\UserController@activateUser')->name('user.activate');
 Route::middleware(['auth:sanctum'])->group(function () {
-    Route::resource('/users', UserController::class);
+    Route::resource('/user', UserController::class);
 });
 // 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
