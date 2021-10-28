@@ -16,7 +16,7 @@ Nhấn Install để cài đặt.
 Sau khi Composer Cài đặt xong nhấn Next và Install để kết thúc.  
 -Fork project về repo cá nhân  
 -Clone project về xampp/htdocs  
--Add remote repository vào htdocs `git remote add Web https://github.com/Vainres/Secondhand-Web.git`  
+-Add remote repository vào htdocs Secondhand-Web `git remote add Web https://github.com/Vainres/Secondhand-Web.git`  
 
 # WORKFLOW
 ## Khi bắt đầu mỗi lần làm
