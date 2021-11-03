@@ -212,20 +212,36 @@ ol li {
     border-radius: 5px;
 }
 .infor_product-export-btn{
-    width: 100%;
-    height: 100%;
     font-size: 1.6rem;
     font-weight: 700;
-    text-decoration: none;
-    color: var(--milk-color);
-    display: flex;
+    float: right;
+    width: 124px;
+    height: 40px;
+    margin: 10px;
+    background-color: var(--grayish-color);
     border-radius: 5px;
 }
 .infor_product-export-btn-text{
-    margin: auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 124px;
+    height: 40px;
+    background-color: var(--grayish-color);
+    border-radius: 5px;
+    color: var(--milk-color);
 }
-.infor_product-export-btn:hover{
+.infor_product-export-btn-text:hover{
     background-color: #999;
     color: var(--text-color);
     border-radius: 5px;
+}
+/***********************TRIGGER*****************************************/
+.valid_err{
+    border: red 1px solid;
+}
+.valid_err_text{
+    font-weight: 200;
+    font-size: 1.4rem;
+    color: red;
+
 }
