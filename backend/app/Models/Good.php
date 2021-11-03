@@ -26,4 +26,8 @@ class Good extends Model
     {
         return $this->belongsTo(Post::class);
     }
+    public function categories()
+    {
+        return $this->hasMany(GoodCategory::class);
+    }
 }
