@@ -506,7 +506,7 @@ line-height: 40px;
     top: 40px;
     display: block;
     text-align: left;
-    
+    overflow: auto;
 }
 
 .FLed-box{
@@ -579,11 +579,12 @@ line-height: 40px;
     top: 40px;
     display: block;
     text-align: left;
-    
+    overflow: auto;
 }
 
 .FLing-box{
     list-style-type: none;
+    
 }
 
 .FLing-box-info{
