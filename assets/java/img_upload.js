@@ -1,62 +1,93 @@
+/************** XU LY LOGIC INPUT********** */
+function Validator(option) {
+    var SelectorRules = {};
 
-
-
-$('.dandev_insert_attach').click(function() {
-    if ($('.list_attach').hasClass('show-btn') === false) {
-        $('.list_attach').addClass('show-btn');
-    }
-    var _lastimg = jQuery('.dandev_attach_view li').last().find('input[type="file"]').val();
-
-    if (_lastimg != '') {
-        var d = new Date();
-        var _time = d.getTime();
-        var _html = '<li id="li_files_' + _time + '" class="li_file_hide">';
-        _html += '<div class="img-wrap">';
-        _html += '<span class="close" onclick="DelImg(this)">×</span>';
-        _html += ' <div class="img-wrap-box"></div>';
-        _html += '</div>';
-        _html += '<div class="' + _time + '">';
-        _html += '<input type="file" class="hidden"  onchange="uploadImg(this)" id="files_' + _time + '"   />';
-        _html += '</div>';
-        _html += '</li>';
-        jQuery('.dandev_attach_view').append(_html);
-        jQuery('.dandev_attach_view li').last().find('input[type="file"]').click();
-    } else {
-        if (_lastimg == '') {
-            jQuery('.dandev_attach_view li').last().find('input[type="file"]').click();
+    function validate(inputElement, rule) {
+        var errInput;
+        var errElement = inputElement.parentElement.querySelector(option.errSelector);
+        var rules = SelectorRules[rule.selector];
+        for (var i = 0; i < rules.length; ++i) {
+            errInput = rules[i](inputElement.value);
+            if (errInput) break;
+        }
+        if (errInput) {
+            errElement.innerText = errInput;
+            inputElement.classList.add('valid_err');
         } else {
-            if ($('.list_attach').hasClass('show-btn') === true) {
-                $('.list_attach').removeClass('show-btn');
+            errElement.innerText = '';
+            inputElement.classList.remove('valid_err');
+        }
+        return !errInput;
+    }
+
+    var formElement = document.querySelector(option.form);
+    if (formElement) {
+        formElement.onsubmit = function(e) {
+            e.preventDefault();
+            //kiểm tra điền form hoàn thành
+            var isFormDone = true;
+            option.rules.forEach(function(rule) {
+                var inputElement = formElement.querySelector(rule.selector);
+                var isDone = validate(inputElement, rule);
+                if (!isDone) {
+                    isFormDone = false;
+                }
+            });
+            if (isFormDone) {
+                if (typeof(option.Onsubmit) === 'function') {
+                    var readInputs = formElement.querySelectorAll('[name]');
+                    // console.log(readInputs);
+                    var formValues = Array.from(readInputs).reduce(function(values, input) {
+                        if (input.type == 'file') {
+                            values[input.name] = input.files;
+                        } else {
+                            values[input.name] = input.value;
+
+                        }
+                        return values;
+                    }, {});
+                    option.Onsubmit(formValues);
+                }
+
             }
         }
+        option.rules.forEach(function(rule) {
+            if (Array.isArray(SelectorRules)) {
+                SelectorRules[rule.selector].push(rule.test);
+            } else {
+                SelectorRules[rule.selector] = [rule.test];
+            }
+            var inputElement = formElement.querySelector(rule.selector);
+
+
+            if (inputElement) {
+                inputElement.onblur = function() {
+                    validate(inputElement, rule);
+                }
+                inputElement.oninput = function() {
+                    var errElement = inputElement.parentElement.querySelector(option.errSelector);
+                    errElement.innerText = '';
+                    inputElement.classList.remove('valid_err');
+                }
+            }
+        });
     }
-});
-
-function uploadImg(el) {
-    var file_data = $(el).prop('files')[0];
-    var type = file_data.type;
-    var fileToLoad = file_data;
-
-    var fileReader = new FileReader();
-
-    fileReader.onload = function(fileLoadedEvent) {
-        var srcData = fileLoadedEvent.target.result;
-
-        var newImage = document.createElement('img');
-        newImage.src = srcData;
-        var _li = $(el).closest('li');
-        if (_li.hasClass('li_file_hide')) {
-            _li.removeClass('li_file_hide');
-        }
-        _li.find('.img-wrap-box').append(newImage.outerHTML);
-
-
-    }
-    fileReader.readAsDataURL(fileToLoad);
-
 }
+Validator.isValue = function(selector) {
+    return {
+        selector: selector,
+        test: function(value) {
+            return value.trim() ? undefined : 'Vui lòng nhập thông tin vào trường này!';
+        }
+    };
+};
 
-function DelImg(el) {
-    jQuery(el).closest('li').remove();
-
+Validator.isMoney = function(selector) {
+    return {
+        selector: selector,
+        test: function(value) {
+            var regex = /^[0-9]+$/;
+            return regex.test(value) ? undefined : 'Vui lòng nhập số tiền!';
+        }
+    };
 }
