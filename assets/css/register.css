@@ -58,39 +58,81 @@
 
 .form-box-box{
     border-radius: 3px;
-    height: 400px;
+    height: 512px;
     width: 350px;
     background-color: white;
     position: absolute;
-    top:50px;
+    top:20px;
     left:0px;
 }
 
-.register-title{
+.login-register-title{
     margin-top:35px; 
     margin-left: 25px;
     font-weight: 700;
     font-size: 16px;
 }
 
-.register-info{
+
+.login-register-info{
     border-radius: 3px;
     margin-bottom: 20px;
     width: 300px;
     height: 34px;
     color: black;
+    position: relative;
 }
 
+.form-message{
+    display: block;
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    left: 26px;
+}
+/*Phan css cua register :BEGIN*/
+#form-message-email{
+    position: absolute;
+    top: 115px ;
+}
+
+#form-message-name{
+    position: absolute;
+    top: 168px ;
+}
+
+#form-message-phone{
+    position: absolute;
+    top: 223px ;
+}
+#form-message-pass{
+    position: absolute;
+    top: 276px ;
+}
+#form-message-repass{
+    position: absolute;
+    top: 331px ;
+}
 ::placeholder{
     opacity: 0.5;
 }
 
-.eye-icon{
+
+.eye-icon1{
     font-size: 2rem;
     height: 31px;
     width: 30px;
     position: absolute;
-    top: 156px;
+    top: 249px;
+    right: 28px;
+}
+
+.eye-icon2{
+    font-size: 2rem;
+    height: 31px;
+    width: 30px;
+    position: absolute;
+    top: 302px;
     right: 28px;
 }
 
@@ -136,7 +178,7 @@ h5 {
     background-color: rgb(84, 84, 202);
     position: absolute;
     left:80px;
-    bottom: 72px;
+    bottom: 54px;
 
 }
 
@@ -147,7 +189,7 @@ h5 {
     background-color: rgb(84, 84, 202);
     position: absolute;
     right:90px;
-    bottom: 72px;
+    bottom: 54px;
 }
 
 .button-facebook:hover{
@@ -188,32 +230,16 @@ h5 {
     color: blue;
     display: inline;
 }
+
+/*Kết thuc phan css cua register : END*/
+/*FOOTER*/
 .footer{
     margin-top: 0px;
     margin-bottom: 30px;
     height: 100px;
     width: 100%;
-  
-}
-/*
-.footer-box-left{
-    width:85% ;
-    height:120px ;
-    float: left;
-    background-color: white;
 }
 
-.footer-box-right{
-    font-size: 12px;
-    opacity: 0.7;
-    margin-top: 0;
-    background-color: #F7F7F7 ;
-    width: 220px;
-    height: 140px;
-    color:var(--grayish-color);
-    float: right;
-}
-*/
 .footer-icon{
     margin-top: 16px;
     margin-left: 24px;
