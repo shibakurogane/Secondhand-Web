@@ -1,6 +1,6 @@
 
 .grid__column-2{
-    background-image: linear-gradient(var(--graydark-color),var(--grayish-color));
+    background-image: linear-gradient(var(--graydark-color),var(--grayish-color))
 
 }
 .header__user{
@@ -24,7 +24,7 @@
 }
 .contain__user{
     
-    margin-top: 30px;
+    margin-top: 140px;
     display: flex;
     box-shadow: 0 1px 5px 0 black;
     border-radius: 2px;
