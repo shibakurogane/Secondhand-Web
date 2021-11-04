@@ -24,6 +24,10 @@ class User extends Authenticatable
         'password',
         'phone',
         'avatar',
+        'provider',
+        'provider_id',
+        'active',
+        'email_verified_at'
     ];
     public function posts()
     {
