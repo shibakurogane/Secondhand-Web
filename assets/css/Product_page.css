@@ -1,0 +1,65 @@
+/*Column 6*/
+.contain__produce .produce__img {
+    background-color: #000;
+    display: block;
+    height: 100px;
+    
+}
+.contain__produce {
+    flex: auto;
+}
+.contain__title-body {
+    line-height: 30px;
+    margin-top: 30px;
+ 
+}
+.contain__title-price {
+    color: red;
+}
+.contain__title-follow {
+    float: right;
+    margin-top: -2px;
+    padding: 2px 6px;
+    border: 1px solid red;
+    border-radius: 100px;
+    text-decoration: none;
+    color: red;
+}
+.contain__title-body .contain__title-device-icon {
+    margin-left: 50px;
+}
+.contain__title-body .contain__title-from-icon {
+    margin-left: 173px;
+}
+/*Column 4*/
+.contain__user .contain__user-img {
+    justify-content: center;
+    align-content: center;
+    border-radius: 100px;
+    display: flex;
+    margin: auto
+}
+.user__img {
+    height: 40px;
+}
+.contain__user .contain__title-h2{
+    margin-bottom: 5px;
+}
+.contain__user .contain__user-page  {
+    padding: 2px 6px;
+    border: 1px solid red;
+    border-radius: 100px;
+    text-decoration: none;
+    color: red;
+}
+.contain__user {
+    line-height: 20px;
+    display: flex;
+}
+.contain__user .contain__user-chat {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.contain__user-chat .contain__user-chaticon {
+    border: none;
+}
