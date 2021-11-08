@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header-footer.css">
+    <link rel="stylesheet" href="./assets/css/sort.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort page</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <img class="logo" src="./assets/img/logo_web_offi.png" alt="">
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list--margin">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link"><i class="header__navbar-icon ti-home"></i>Trang
+                                chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link"><i class="header__navbar-icon ti-user"></i>Quản
+                                lý tin</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link"><i class="header__navbar-icon ti-bell"></i>Thông
+                                báo</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông Báo Vừa Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Xe Honda CRV</span>
+                                                <span class="header__notify-decrip">Khi giới hạn không thể ngăn lối
+                                                    thành công, cùng Honda CR-V đánh thức và cảm nhận mọi giác quan
+                                                    trong bạn để chạm đến đỉnh vinh quang. </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Xe Honda CRV</span>
+                                                <span class="header__notify-decrip">Mô tả</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/img-tt/hondacrv.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Xe Honda CRV</span>
+                                                <span class="header__notify-decrip">Mô tả</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-more">
+                            <a href="" class="header__navbar-item-link"><i
+                                    class="header__navbar-icon ti-more"></i>Thêm</a>
+                            <div class="header__more">
+                                <ul class="header__more-list">
+                                    <li class="header__more-item">
+                                        <a href=""><i class="header__more-item-icon ti-help-alt"></i>Trợ giúp</a>
+                                    </li>
+                                    <li class="header__more-item">
+                                        <a href=""><i class="header__more-item-icon ti-settings"></i> Cài đặt</a>
+                                    </li>
+                                    <li class="header__more-item">
+                                        <a href=""><i class="header__more-item-icon ti-shift-right"></i> Đăng xuất</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header__seacrh">
+                        <div class="header__seacrh-input-wrap">
+                            <input type="text" class="header__seacrh-input" placeholder="Tìm Kiếm Sản Phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Laptop Gaming thế hệ mới</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Ôtô bán tải vượt thác</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Quần áo cũ rách</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="" class="header__seacrh-btn">
+                            <i class="header__seacrh-btn-icon ti-search"></i>
+                        </a>
+                    </div>
+
+                    <div class="header__user">
+                        <img src="./assets/img/img-tt/user.png" alt="" class="header__user-img">
+                        <a href="" class="header__user-name">Nguyễn Hiếu Nghĩa</a>
+                    </div>
+                    <div class="header__post">
+                        <a class="header__post-btn" href="">
+                            <i class="header__post-btn-icon ti-share"></i>
+                            Đăng tin
+                        </a>
+                    </div>
+                    <div class="header__cast">
+                        <a class="header__cast-btn" href="">
+                            <i class="header__cast-btn-icon ti-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <center>
+                <div class="search-box">
+                    <div class="chossen-box">
+                        <div class="sort-box">
+                            <div class="sort-1">Sắp xếp theo</div>
+                            <div class="sort-2">
+                                <a href="#" style="text-decoration: none;color: white;">Tin đăng gần nhất</a>
+                            </div>
+                            <form action="" method="POST" id="form-search">
+                                <div class="chose-form">
+                                    <!-- <label for="price" class="label">Giá cả</label> -->
+                                    <select name="Mức giá" class="choice">
+                                        <option value="Giá" class="chossen-info">Giá</option>
+                                        <option value="500 - 1.000.000" class="chossen-info">500 - 1.000.000"</option>
+                                        <option value="1.000.000 - 2.000.000" class="chossen-info">1.000.000 - 2.000.000
+                                        </option>
+                                        <option value="2.000.000 - 3.000.000" class="chossen-info">2.000.000 - 3.000.000
+                                        </option>
+                                        <option value=">3.000.000" class="chossen-info">>3.000.000
+                                        </option>
+                                    </select>
+                                    
+                            </form>
+                            <div class="sort"><a href="" style="text-decoration: none;color: white;">LỌC</a></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="productshow">
+                        <h3 class="productshow__header"><i class="ti-announcement"></i> Sản Phẩm Mới Đăng </h3>
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href=""><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="productshow__item">
+                                    <a href="#">
+                                        <div class="productshow__item-img"
+                                            style="background-image: url(./assets/img/img-tt/hondacrv.jpg);"></div>
+                                        <h4 class="productshow__item-name">Honda CRV xe chạy nhanh nhất thế giới sản xuất ở nước ngoài
+                                            chạy như trâu điên</h4>
+                                        <div class="productshow__item-price">2 tỷ 7000000đ</div>
+                                        <div class="productshow__item-action">
+                                            <a class="action__LIKE" href="#"><i class="ti-heart"></i></a>
+                                            <a href="" class="action__BUY">Mua</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!--------------------------MORE------------------------------>
+                    <div class="productshow_more">
+                        <a class="productshow_more-link" href="">Xem thêm
+                            <i class="productshow_more-icon ti-arrow-circle-down"></i></a>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+        </div>
+        </center>
+    </div>
+
+
+</body>
+
+</html>
+
