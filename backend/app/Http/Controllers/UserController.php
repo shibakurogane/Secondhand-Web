@@ -44,6 +44,8 @@ class UserController extends Controller
     public function resendActivationMail(Request $request)
     {
             $user=User::where('email',$request->email)->first();
+            if($user->active==true) return response()->json('This email has been verified');
+
             return response()->json($this->sendActivationMail($user));
     }
 
@@ -177,11 +179,23 @@ class UserController extends Controller
         return response()->json('Password reset email has been sent');
 
     }
-    public function usss(Request $request)
+    public function usss(Request $request,$id)
     {
-        // $user=User::find(150);
-        // $al=false;
-        // if($user=="") $al=true;
-        //     return response()->json($al);
+        $user=User::find($id);
+        
+        return response()->json($user);
     }
+    public function uploadAvatar(Request $request) {
+        $user = User::find(auth('sanctum')->user()->id);
+        if(!$request->hasFile('image')) {
+            return response()->json(['upload_file_not_found'], 400);
+        }
+        $file = $request->file('image');
+        if(!$file->isValid()) {
+            return response()->json(['invalid_file_upload'], 400);
+        }
+        $path = public_path() . "/uploads/avatar/";
+        $file->move($path, $user->id);
+        return response()->json(compact('path'));
+     }
 }

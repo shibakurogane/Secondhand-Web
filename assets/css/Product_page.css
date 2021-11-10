@@ -52,8 +52,6 @@
     text-decoration: none;
     color: red;
 }
-.contain__user .contain__user-comment {
-}
 .contain__user {
     line-height: 20px;
     display: flex;

@@ -14,9 +14,12 @@ use App\Http\Controllers\AuthController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/auth/{provider}', 'App\Http\Controllers\SocialAuthController@redirectToProvider');
+Route::get('/auth/{provider}/callback', 'App\Http\Controllers\SocialAuthController@handleProviderCallback');
+
 Route::post('/login', 'App\Http\Controllers\AuthController@login');
 Route::post('/signup', 'App\Http\Controllers\UserController@create');
-Route::get('/info', 'App\Http\Controllers\UserController@usss');
+Route::get('/info/{id}', 'App\Http\Controllers\UserController@usss');
 Route::get('/activation/{token}', 'App\Http\Controllers\UserController@activateUser')->name('user.activate');
 
 Route::post('/resend-activation-mail','App\Http\Controllers\UserController@resendActivationMail');
@@ -30,6 +33,7 @@ Route::post('/resetpassword','App\Http\Controllers\UserController@resetPasswordF
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::resource('/user', UserController::class);
+    Route::post('/uploadAvatar','App\Http\Controllers\UserController@uploadAvatar')->name('upload.handle');
 });
 // 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

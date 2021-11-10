@@ -32,6 +32,8 @@
       <div class = "container">
          <div class = "content">
             <div class = "title">Hello world!</div>
+            <a href="{{ URL::to('api/auth/google') }}">Google Login</a>
+
          </div>
       </div>
    </body>
