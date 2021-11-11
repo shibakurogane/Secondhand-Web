@@ -231,3 +231,30 @@ Validator.isConfrimed = function(selector, getConfirmValue,message){
     }
 }
 
+var infoAPI = 'http://localhost:3000/info';//link json
+
+fetch(infoAPI,{method:"GET"})
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (info) {
+        console.log(info);
+    })
+
+
+// .then(function(infoAPIs){
+//     var htmls = infoAPIs.map(function(infoAPI){
+//         return `<li>
+//             <p>${infoAPI.email}</p>
+//             <p>${infoAPI.name}</p>
+//             <p>${infoAPI.phone}</p>
+//             <p>${infoAPI.pass}</p>
+//             <p>${infoAPI.repass}</p>
+//         </li>`;
+//         var html = htmls.join('')
+//     })
+// })
+// .catch(function(err){
+//     alert('error!!!');
+// })
+
