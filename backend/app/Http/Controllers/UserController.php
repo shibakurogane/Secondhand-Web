@@ -21,6 +21,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function uploadAvatar(Request $request) {
         $user = User::find(auth('sanctum')->user()->id);
         if(!$request->hasFile('image')) {
@@ -30,8 +31,11 @@ class UserController extends Controller
         if(!$file->isValid()) {
             return response()->json(['invalid_file_upload'], 400);
         }
-        $path = public_path() . "/storage/uploads/avatar/";
+        $path = public_path() . "/storage/uploads/avatars/";
         $file->move($path, $user->id .'.jpg');
+        $user->update([ 
+            'avatar'=> "/storage/uploads/avatars/" .$user->id .'.jpg'
+        ]);
         return response()->json('Upload successful');
      }
     public function index()
@@ -128,7 +132,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         $user = User::find(auth('sanctum')->user()->id);
         $user->update($request->all());
@@ -155,6 +159,7 @@ class UserController extends Controller
         $user = User::find($active->user_id);
         $user->active = true;
         $user->save();
+        $user->update(['email_verified_at' => now(),]);
         $delete=$active->deleteActivation($token);
         return response()->json(['Xác thực thành công',$delete]);
     }

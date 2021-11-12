@@ -11,8 +11,7 @@ class Good extends Model
     protected $fillable = [
         'name',
         'image',
-        'seller_id',
-        'purchaser_id',
+        'user_id',
         'post_id',
         'detail',
         'price',
@@ -28,6 +27,6 @@ class Good extends Model
     }
     public function categories()
     {
-        return $this->hasMany(GoodCategory::class);
+        return $this->belongsToMany(Category::class,'good_categories','good_id','category_id');
     }
 }

@@ -13,6 +13,7 @@ class Category extends Model
     ];
     public function goods()
     {
-        return $this->hasMany(GoodCategory::class);
+        return $this->belongsToMany(Good::class,'good_categories','category_id','good_id');
+
     }
 }
