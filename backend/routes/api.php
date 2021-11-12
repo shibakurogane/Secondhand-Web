@@ -14,6 +14,7 @@ use App\Http\Controllers\AuthController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 Route::get('/auth/{provider}', 'App\Http\Controllers\SocialAuthController@redirectToProvider');
 Route::get('/auth/{provider}/callback', 'App\Http\Controllers\SocialAuthController@handleProviderCallback');
 
@@ -33,9 +34,6 @@ Route::post('/resetpassword','App\Http\Controllers\UserController@resetPasswordF
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::resource('/user', UserController::class);
-    Route::post('/uploadAvatar','App\Http\Controllers\UserController@uploadAvatar')->name('upload.handle');
+    Route::post('/uploadAvatar','App\Http\Controllers\UserController@uploadAvatar');
+
 });
-// 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });

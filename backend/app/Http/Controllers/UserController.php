@@ -21,6 +21,19 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function uploadAvatar(Request $request) {
+        $user = User::find(auth('sanctum')->user()->id);
+        if(!$request->hasFile('image')) {
+            return response()->json(['upload_file_not_found'], 400);
+        }
+        $file = $request->file('image');
+        if(!$file->isValid()) {
+            return response()->json(['invalid_file_upload'], 400);
+        }
+        $path = public_path() . "/uploads/avatar/";
+        $file->move($path, $user->id .'.jpg');
+        return response()->json('Upload successful');
+     }
     public function index()
     {
         $user = User::find(auth('sanctum')->user()->id);
@@ -185,17 +198,5 @@ class UserController extends Controller
         
         return response()->json($user);
     }
-    public function uploadAvatar(Request $request) {
-        $user = User::find(auth('sanctum')->user()->id);
-        if(!$request->hasFile('image')) {
-            return response()->json(['upload_file_not_found'], 400);
-        }
-        $file = $request->file('image');
-        if(!$file->isValid()) {
-            return response()->json(['invalid_file_upload'], 400);
-        }
-        $path = public_path() . "/uploads/avatar/";
-        $file->move($path, $user->id);
-        return response()->json(compact('path'));
-     }
+    
 }
