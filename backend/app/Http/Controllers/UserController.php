@@ -30,7 +30,7 @@ class UserController extends Controller
         if(!$file->isValid()) {
             return response()->json(['invalid_file_upload'], 400);
         }
-        $path = public_path() . "/uploads/avatar/";
+        $path = public_path() . "/storage/uploads/avatar/";
         $file->move($path, $user->id .'.jpg');
         return response()->json('Upload successful');
      }
