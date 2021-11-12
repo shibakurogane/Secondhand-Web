@@ -1,0 +1,95 @@
+
+.grid__column-2{
+    background-image: linear-gradient(var(--graydark-color),var(--grayish-color))
+
+}
+.header__user{
+    height: 40px;
+    width: 180px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__user-img{
+    height: 40px;
+    
+}
+
+.header__user-name{
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left:4px ;
+    color: var(--white-color);
+}
+.contain__user{
+    
+    margin-top: 140px;
+    display: flex;
+    box-shadow: 0 1px 5px 0 black;
+    border-radius: 2px;
+    
+}
+.contain__user-img {
+    justify-content: center;
+    align-content: center;
+    border-radius: 100px;
+    flex: 1;
+    display: flex;
+    margin: auto;
+}
+.contain__user-img img {
+    height: 80px;
+
+
+
+}
+.contain__title{
+
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 1.6rem;
+    flex: 6;
+    line-height: 36px;
+    color: var(--text-color)
+}
+.contain__title-h2{
+    margin-bottom: 5px;
+}
+
+.contain__title-fixuser {
+    padding: 4px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-color)
+}
+.contain__tilte-fixmore {
+    padding: 4px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-left: 10px;
+}
+.contain__title-follower-number {
+    margin-left: 50px;
+}
+.contain__title-follow-number,
+.contain__title-follower-number {
+    font-weight: 700;
+}
+.contain__title-usericon {
+    color: rgb(180, 177, 177);
+}
+.contain__title-user-dayjoin, 
+.contain__title-user-add {
+    color: rgb(180, 177, 177);
+}
+.contain__title-add {
+    margin-bottom: 15px;
+}
+
+
