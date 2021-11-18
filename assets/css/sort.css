@@ -1,13 +1,16 @@
-.main{
-    height: 1500px;
+.main-2{
+    height: 1300px;
     width: 100%;
     background: linear-gradient(black,var(--grayish-color));
+    margin-top: 130px;
+    
     
 }
 
 .search-box{
+    margin: 0 auto;
     width: 1212.8px;
-    height: 1500px;
+    height: 1300px;
     background-color: white;
     position: relative;
 }
@@ -16,7 +19,7 @@
     width: 1212.8px;
     height: 60px;
     position: absolute;
-    top: 130px;
+    top: 15px;
     background-color: rgb(255, 255, 255);
     /* display: grid;
     grid-template-columns: 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333%;
@@ -63,7 +66,7 @@
     height: 30px;
     margin-top: 10px;
     font-size: 14px;
-    background-color: rgb(119, 175, 212);
+    background-color:var(--graydark-color);
     line-height: 30px;
     border-radius: 5px;
     margin-right: 10px;
@@ -72,7 +75,7 @@
 .sort{
     width: 60px;
     height: 40px;
-    background-color: rgb(119, 175, 212);
+    background-color: var(--graydark-color);
     line-height: 40px;
     position: absolute;
     right: 484px;
@@ -106,7 +109,7 @@
 .chossen-info{
     
     color: black;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -121,6 +124,10 @@
 
 
 /*------------------CSS Tin mới đăng------------------------------*/
+.contain{
+    
+}
+
 .productshow{
     border-radius:4px;
     /*border: #999 3px solid;*/
@@ -135,7 +142,7 @@
     padding-top: 18px;
     padding-bottom: 20px;
     border-bottom: 1px solid #999;
-
+    margin-top: 74px;
 }
 
 .productshow__item{
@@ -243,4 +250,58 @@
     text-decoration: none;
     color:var(--text-color);
     font-weight: 700;
+}
+
+/*FOOTER*/
+.footer{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100%;
+}
+
+.footer-icon{
+    margin-top: 16px;
+    margin-left: 24px;
+    opacity: 0.8;
+}
+
+.footer-icon-box{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.footer-icon-box:hover{
+    
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-link{
+    text-decoration: none;
+    color:var(--grayish-color);
+    
+}
+
+.footer-button{
+    
+    color: var(--grayish-color);
+    margin-top: 8px;
+    margin-left: 0px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button:hover{
+    color:white; 
+}
+
+.footer-bottom{
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none;
+    color: var(--grayish-color);
 }
